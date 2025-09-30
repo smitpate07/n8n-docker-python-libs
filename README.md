@@ -5,12 +5,6 @@ Turn raw data files into **insightful charts + summaries** delivered directly to
 
 ---
 
-## 🎥 Demo  
-Check out the workflow in action:  
-👉 [Watch the demo video](#) <!-- replace # with actual video link -->
-
----
-
 ## ⚡ Workflow Overview  
 
 1. **Upload a file (CSV)** via Telegram  
@@ -37,7 +31,7 @@ Check out the workflow in action:
 
 ## 🖼️ Workflow Diagram  
 
-![Workflow](./assets/workflow.png)  
+![Workflow](./assets/Workflow.png)  
 
 ---
 
@@ -50,4 +44,10 @@ Check out the workflow in action:
 - **Docker** → To customize the n8n image    
 
 ---
+---
+
+## 🎥 Demo  
+Check out the workflow in action: 
+
+https://github.com/user-attachments/assets/b51882dc-fb47-4580-90b0-0993bba4d8a9
 
