@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  n8n:
+    # Use the build directive to create the custom image from the Dockerfile
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: n8n
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=localhost
+      - N8N_PORT=5678
+    volumes:
+      - ./n8n_data:/home/node/.n8n
+      
+# use a named volume when you want Docker to manage the storage for you, and use a bind mount when you need to share files directly with the host filesystem. 
+# Below is the process to define the named volumes at the top level (Remove Hashtags)
+#volumes:
+ # n8n_data:
