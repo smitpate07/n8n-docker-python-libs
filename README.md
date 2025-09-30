@@ -53,7 +53,7 @@ Check out the workflow in action:
 https://github.com/user-attachments/assets/b51882dc-fb47-4580-90b0-0993bba4d8a9
 
 ---
-## How to create Custom Docker Image with Python Libraries ?
+## How to create Custom Docker Image with Python Libraries for n8n ?
 
 **Step 1:** Create Dockerfile. User Dockerfile in this repo.
 
