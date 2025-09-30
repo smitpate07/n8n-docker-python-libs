@@ -20,6 +20,7 @@ Turn raw data files into **insightful charts + summaries** delivered directly to
 ---
 📂 Project Structure
 
+```bash
 .
 ├── n_test.py               # Python script for EDA
 ├── Dockerfile              # Docker File to copy local script to Docker Desktop 
@@ -28,6 +29,7 @@ Turn raw data files into **insightful charts + summaries** delivered directly to
 ├── assets/
 │   └── workflow.png        # Workflow diagram (README preview)   
 └── README.md
+```
 
 ## 🖼️ Workflow Diagram  
 
@@ -44,10 +46,10 @@ Turn raw data files into **insightful charts + summaries** delivered directly to
 - **Docker** → To customize the n8n image    
 
 ---
----
 
 ## 🎥 Demo  
 Check out the workflow in action: 
 
 https://github.com/user-attachments/assets/b51882dc-fb47-4580-90b0-0993bba4d8a9
+
 
