@@ -1,6 +1,6 @@
 # 📊 From File → Charts → Telegram 🚀  
 **Automated Exploratory Data Analysis (EDA) Pipeline with Python + n8n + Telegram**
-
+  
 Turn raw data files into **insightful charts + summaries** delivered directly to your **Telegram bot** — all in seconds.  
 
 ---
@@ -39,11 +39,11 @@ Turn raw data files into **insightful charts + summaries** delivered directly to
 
 ## 🛠️ Tech Stack  
 
-- **[Python](https://www.python.org/)** → Data wrangling + visualization  
+- **[Python](https://www.python.org/)** 🐍 → Data wrangling + visualization  
   - Pandas · NumPy · Seaborn · Matplotlib  
-- **[n8n](https://n8n.io/)** → Workflow automation engine  
-- **[Telegram Bot API](https://core.telegram.org/bots/api)** → File input + message delivery  
-- **Docker** → To customize the n8n image    
+- **[n8n](https://n8n.io/)** <img src="https://n8n.io/favicon.ico" alt="n8n" width="20"/>  → Workflow automation engine  
+- **[Telegram Bot API](https://core.telegram.org/bots/api)**   → File input + message delivery  
+- **Docker** 🐳→ For containerization of the entire process.
 
 ---
 
@@ -83,3 +83,17 @@ This video is the solution for the issue, you will encounter while running n8n v
    ```
 
 **Step 5:** All done!!
+
+---
+
+## ✨ Features
+
+📊 Charts + correlations out of the box
+
+📱 Delivered right into Telegram
+
+### 🔗 Links
+
+- [n8n Documentation](https://n8n.io/docs/)
+- [Telegram Bot API](https://core.telegram.org/bots/api)
+- [Docker Documentation](https://docs.docker.com/)
