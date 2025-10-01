@@ -53,7 +53,7 @@ Check out the workflow in action:
 https://github.com/user-attachments/assets/b51882dc-fb47-4580-90b0-0993bba4d8a9
 
 ---
-## How to create Custom Docker Image with Python Libraries for n8n ?
+## Guide on how to create Custom Docker Image with Python Libraries for n8n ?
 
 **Step 1:** Create Dockerfile. Use Dockerfile in this repo.
 
@@ -62,22 +62,24 @@ https://github.com/user-attachments/assets/b51882dc-fb47-4580-90b0-0993bba4d8a9
 **Step 3:** Watch this video, before running below code: https://www.youtube.com/watch?v=RvAD2__YYjg
 
 This video is the solution for the issue, you will encounter while running n8n via Docker. The error is "**Bad Request: bad webhook: An HTTPS URL must be provided for webhook**"
-```bash 
-docker compose up -d
-```
+   ```bash 
+   docker compose up -d
+   ```
 **Step 4:** Running Python Script in n8n.
 
- - **Step 4.1:** Add Code Node with Language selected as JavaScript, and add below code. This code will output the filepath where the JSON converted file is saved in n8n
+ - **Step 4.1:** Add "Code" Node with Language selected as JavaScript, and add below code. This code will output the filepath where the JSON converted file is saved in n8n. 
 
-```bash 
- return [{
-  filePath: `/home/node/.n8n/binaryData/${$binary.data.id.replace('filesystem-v2:', '')}`
-}];
-```
+    **Question** Where to add "Code" Node ? See Red box under Workflow Diagram.
+
+   ```bash 
+   return [{
+   filePath: `/home/node/.n8n/binaryData/${$binary.data.id.replace('filesystem-v2:', '')}`
+   }];
+   ```
  - **Step 4.2:** Add "Execute Command" node after the "Code" Node. Under "Command" property add below code. This Code passes the file path received from "Code" node to python script copied inside the Docker image.
 
- ```bash 
- python3 /tmp/n_test.py "{{$json.filePath}}"
-```
+   ```bash 
+   python3 /tmp/n_test.py "{{$json.filePath}}"
+   ```
 
 **Step 5:** All done!!
